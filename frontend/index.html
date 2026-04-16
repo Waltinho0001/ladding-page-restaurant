@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saboroso - Experiência Gastronômica</title>
+    <meta name="description" content="Descubra a autêntica culinária com ingredientes selecionados e um ambiente inesquecível.">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Restaurante -->
+    <header>
+        <a href="#" class="logo">Saboroso<span>.</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Reservas</a></li>
+        </ul>
+
+        <button class="menu-btn" aria-label="Abrir Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h1>O Sabor da <span>Tradição</span> em Cada Prato</h1>
+            <p>Ingredientes frescos, culinária apaixonada e um ambiente perfeito para momentos inesquecíveis.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Fazer Reserva</a>
+                <a href="#menu" class="btn btn-outline">Ver Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="about" class="about">
+        <div class="about-content reveal">
+            <h2>Nossa História e <span>Paixão</span></h2>
+            <p>Fundado em 2010, o Saboroso nasceu do desejo de trazer os sabores autênticos da alta gastronomia para o coração da cidade. Nossa missão é proporcionar não apenas uma refeição, mas uma experiência sensorial completa, preparada pelas mãos dos melhores chefs.</p>
+            <ul class="about-features">
+                <li><i class="fas fa-check"></i> Ingredientes 100% Orgânicos Farm-to-Table</li>
+                <li><i class="fas fa-check"></i> Chefs Premiados Internacionalmente</li>
+                <li><i class="fas fa-check"></i> Ambiente Climatizado e Acústica Perfeita</li>
+            </ul>
+        </div>
+        <div class="about-image reveal">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=1470&auto=format&fit=crop" alt="Ambiente do Restaurante">
+        </div>
+    </section>
+
+    <!-- Seção de Menu -->
+    <section id="menu" class="menu">
+        <div class="section-header reveal">
+            <h2>Nossas <span>Especialidades</span></h2>
+            <p>Uma seleção cuidadosamente elaborada dos nossos pratos mais amados.</p>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Prato 1 -->
+            <div class="menu-card reveal">
+                <div class="menu-img">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1469&auto=format&fit=crop" alt="Costela Premium">
+                </div>
+                <div class="menu-info">
+                    <div class="menu-title-price">
+                        <h3>Costela Premium ao Vinho</h3>
+                        <span class="price">R$ 145</span>
+                    </div>
+                    <p>Cozida lentamente por 12 horas, acompanhada de purê de batata baroa trufado e aspargos salteados.</p>
+                </div>
+            </div>
+
+            <!-- Prato 2 -->
+            <div class="menu-card reveal" style="transition-delay: 0.1s;">
+                <div class="menu-img">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f45c510047?q=80&w=1470&auto=format&fit=crop" alt="Salmão Grelhado">
+                </div>
+                <div class="menu-info">
+                    <div class="menu-title-price">
+                        <h3>Salmão Grelhado no Fogo</h3>
+                        <span class="price">R$ 110</span>
+                    </div>
+                    <p>Com crosta de gergelim e ervas finas, servido com risoto de limão siciliano perfeitamente equilibrado.</p>
+                </div>
+            </div>
+
+            <!-- Prato 3 -->
+            <div class="menu-card reveal" style="transition-delay: 0.2s;">
+                <div class="menu-img">
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1470&auto=format&fit=crop" alt="Massa Artesanal">
+                </div>
+                <div class="menu-info">
+                    <div class="menu-title-price">
+                        <h3>Fettuccine Al Tartufo</h3>
+                        <span class="price">R$ 95</span>
+                    </div>
+                    <p>Massa artesanal italiana envolta num creme aveludado de queijo parmesão e lascas de trufas negras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Reserva -->
+    <section id="contact" class="reservation">
+        <div class="reservation-box reveal">
+            <h2>Reserve a sua <span>Mesa</span></h2>
+            <p>Garanta seu lugar e vivencie momentos incríveis conosco.</p>
+            <form class="reservation-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Seu Nome Completo" required>
+                    <input type="tel" placeholder="Telefone" required>
+                </div>
+                <div class="input-group">
+                    <input type="date" required>
+                    <input type="time" required>
+                </div>
+                <select required>
+                    <option value="" disabled selected>Número de Pessoas</option>
+                    <option value="1">1 Pessoa</option>
+                    <option value="2">2 Pessoas</option>
+                    <option value="3">3 Pessoas</option>
+                    <option value="4">4 Pessoas</option>
+                    <option value="5">5+ Pessoas</option>
+                </select>
+                <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Confirmar Reserva</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content reveal">
+            <div class="footer-col">
+                <a href="#" class="logo">Saboroso<span>.</span></a>
+                <p style="margin-top: 15px;">Transformando ingredientes em arte culinária desde 2010. Sua melhor experiência gastronômica.</p>
+                <div class="social-links" style="margin-top: 20px;">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Horário de Funcionamento</h3>
+                <ul class="hours">
+                    <li><span>Segunda a Quinta:</span> 18:00 - 23:30</li>
+                    <li><span>Sexta e Sábado:</span> 18:00 - 01:00</li>
+                    <li><span>Domingo:</span> 12:00 - 17:00</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Localização & Contato</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Rua das Flores, 123 - Centro, SP</li>
+                    <li><i class="fas fa-phone-alt"></i> (11) 98765-4321</li>
+                    <li><i class="fas fa-envelope"></i> reservas@saboroso.com.br</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Restaurante Saboroso. Todos os direitos reservados. Experiência e Sabor.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
