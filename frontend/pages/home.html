@@ -1,108 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tradição</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saboroso - Experiência Gastronômica</title>
+  <meta name="description" content="Descubra a autêntica culinária com ingredientes selecionados e um ambiente inesquecível.">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
   <!-- HEADER -->
   <header>
-    <a href="#"><h1>Saboroso</h1></a>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Sobre nós</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Reserva</a></li>
+    <a href="#"><h1>Saboroso<span>.</span></h1></a>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre nós</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reserves">Reservas</a></li>
       </ul>
+    </nav>
   </header>
-  
+
   <!-- MAIN -->
   <main>
-    <!-- HERO HOME SECTION -->
+    <!-- HERO -->
     <section id="home" class="container-home">
-      <h1>O sabor da <span>Saboroso</span> em cada prato.</h1>
+      <h2>O sabor da <span>Tradição</span> em cada prato.</h2>
       <p>Ingredientes frescos, culinária apaixonada e um ambiente perfeito para momentos inesquecíveis.</p>
     </section>
-    
-    <!-- BUTÕES SECTION -->
+
+    <!-- BOTÕES -->
     <section class="container-buttons-home">
-      <a href="#">Fazer Reserva</a>
-      <a href="#">Conferir Menu</a>
+      <a href="#reserves" class="btn-primary">Fazer Reserva</a>
+      <a href="#menu" class="btn-outline">Ver Menu</a>
     </section>
-    
-    <!-- SOBRE NOS SECTION -->
+
+    <!-- SOBRE -->
     <section id="about" class="container-about">
       <h2>Nossa História e <span>Paixão</span></h2>
-      <p>Fundado em 2010, o Saboroso nasceu do desejo de trazer os sabores autênticos da alta gastronomia para o coração da cidade. Nossa missão é proporcionar não apenas uma refeição, mas uma experiência sensorial completa, preparada pelas mãos dos melhores chefs.</p>
-      
+
+      <p>
+        Fundado em 2010, o Saboroso nasceu do desejo de trazer os sabores autênticos da alta gastronomia
+        para o coração da cidade. Nossa missão é proporcionar não apenas uma refeição, mas uma experiência
+        sensorial completa, preparada pelas mãos dos melhores chefs.
+      </p>
+
       <ul class="about-features">
         <li><i class="fas fa-check"></i> Ingredientes 100% Orgânicos Farm-to-Table</li>
         <li><i class="fas fa-check"></i> Chefs Premiados Internacionalmente</li>
         <li><i class="fas fa-check"></i> Ambiente Climatizado e Acústica Perfeita</li>
       </ul>
-      
-      <section class="image-reveal">
-        <!-- IMAGEM DE RESTAURANTE DE FUNDO -->
-        <!-- <img src="" alt=""> -->
-      </section>
+
+      <figure class="image-reveal">
+        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=1470&auto=format&fit=crop"
+             alt="Ambiente do restaurante">
+      </figure>
     </section>
-    
-    <!-- MENH SECTION -->
+
+    <!-- MENU -->
     <section id="menu" class="container-menu">
-      <section class="menu-presentation-reveal">
+
+      <header class="menu-presentation-reveal">
         <h2>Nossas <span>Especialidades</span></h2>
         <p>Uma seleção cuidadosamente elaborada dos nossos pratos mais amados.</p>
-      </section>
-      
-      <section class="menu-section">
-        <!-- 1° Prato -->
+      </header>
+
+      <!-- PRATO 1 -->
+      <article class="menu-item">
         <figure class="menu-card-reveal">
-          <!-- IMAGEM DO PRATO Costela Premium ao Vinho-->
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1469&auto=format&fit=crop"
+               alt="Costela Premium ao vinho">
         </figure>
-        <article class="menu-info">
-          <article class="menu-title">
+
+        <section class="menu-info">
+          <header class="menu-title">
             <h3>Costela Premium ao Vinho</h3>
             <span class="price">R$ 145</span>
-          </article>
-          <p>Cozida lentamente por 12 horas, acompanhada de purê de batata baroa trufado e aspargos salteados.</p>
-        </article>
-        
-        
-        <!-- 2° Prato -->
+          </header>
+
+          <p>
+            Cozida lentamente por 12 horas, acompanhada de purê de batata baroa trufado
+            e aspargos salteados.
+          </p>
+        </section>
+      </article>
+
+      <!-- PRATO 2 -->
+      <article class="menu-item">
         <figure class="menu-card-reveal">
-          <!-- IMAGEM DO PRATO Salmão Grelhado no Fogo -->
+          <img src="https://images.unsplash.com/photo-1563379926898-05f45c510047?q=80&w=1470&auto=format&fit=crop"
+               alt="Salmão grelhado">
         </figure>
-        <article class="menu-info">
-          <article class="menu-title">
+
+        <section class="menu-info">
+          <header class="menu-title">
             <h3>Salmão Grelhado no Fogo</h3>
             <span class="price">R$ 110</span>
-          </article>
-          <p>Com crosta de gergelim e ervas finas, servido com risoto de limão siciliano perfeitamente equilibrado.</p>
-        </article>
-        
-        
-        <!-- 3° Prato -->
+          </header>
+
+          <p>
+            Com crosta de gergelim e ervas finas, servido com risoto de limão siciliano.
+          </p>
+        </section>
+      </article>
+
+      <!-- PRATO 3 -->
+      <article class="menu-item">
         <figure class="menu-card-reveal">
-          <!-- IMAGEM DO PRATO Fettuccine Al Tartufo -->
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1470&auto=format&fit=crop"
+               alt="Fettuccine al tartufo">
         </figure>
-        <article class="menu-info">
-          <article class="menu-title">
+
+        <section class="menu-info">
+          <header class="menu-title">
             <h3>Fettuccine Al Tartufo</h3>
             <span class="price">R$ 95</span>
-          </article>
-          <p>Massa artesanal italiana envolta num creme aveludado de queijo parmesão e lascas de trufas negras.</p>
-        </article>
-      </section>
+          </header>
+
+          <p>
+            Massa artesanal italiana com creme de parmesão e lascas de trufas negras.
+          </p>
+        </section>
+      </article>
+
     </section>
-    
-    <!-- RESERVAS SECTION -->
-    <section id="reserves" class="container-reserves"></section>
+
+    <!-- RESERVAS -->
+    <section id="reserves" class="container-reserves">
+
+      <h2>Reserve sua <span>Mesa</span></h2>
+      <p>Garanta seu lugar e vivencie momentos incríveis conosco.</p>
+
+      <form class="reservation-form">
+
+        <fieldset>
+          <input type="text" placeholder="Seu nome completo" required>
+          <input type="tel" placeholder="Telefone" required>
+        </fieldset>
+
+        <fieldset>
+          <input type="date" required>
+          <input type="time" required>
+        </fieldset>
+
+        <select required>
+          <option disabled selected>Número de Pessoas</option>
+          <option>1 Pessoa</option>
+          <option>2 Pessoas</option>
+          <option>3 Pessoas</option>
+          <option>4 Pessoas</option>
+          <option>5+ Pessoas</option>
+        </select>
+
+        <button type="submit" class="btn-primary">Confirmar Reserva</button>
+
+      </form>
+
+    </section>
+
   </main>
-  
-  <footer>
-    <!-- RODAPÉ SECTION -->
-    <section id="footer" class="container-footer"></section>
+
+  <!-- FOOTER -->
+  <footer class="container-footer">
+
+    <section>
+      <h3>Saboroso</h3>
+      <p>Transformando ingredientes em arte culinária desde 2010.</p>
+
+      <nav class="social-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+      </nav>
+    </section>
+
+    <section>
+      <h3>Horário</h3>
+      <ul>
+        <li>Seg - Qui: 18:00 - 23:30</li>
+        <li>Sex - Sáb: 18:00 - 01:00</li>
+        <li>Dom: 12:00 - 17:00</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Contato</h3>
+      <ul>
+        <li>Rua das Flores, 123</li>
+        <li>(11) 98765-4321</li>
+        <li>reservas@saboroso.com.br</li>
+      </ul>
+    </section>
+
   </footer>
+  
+  <script src="../script.js"></script>
 </body>
 </html>
